@@ -21,7 +21,7 @@ export default function AddToCartModal() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [count, setCount] = React.useState(0);
+  //   const [count, setCount] = React.useState(0);
 
   return (
     <div>
@@ -45,9 +45,7 @@ export default function AddToCartModal() {
                 border: "2px solid #000",
                 ml: 2,
               }}
-              onClick={() => {
-                setCount(count + 1);
-              }}
+              onClick={() => props.addToCartHandler()}
             >
               +
             </Button>
@@ -56,9 +54,7 @@ export default function AddToCartModal() {
                 border: "2px solid #000",
                 ml: 2,
               }}
-              onClick={() => {
-                setCount(count - 1);
-              }}
+              onClick={() => props.removeToCartHandler()}
             >
               -
             </Button>
