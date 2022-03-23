@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "bookName": "Building Tools With Github",
+    "img": "https://m.media-amazon.com/images/I/51gcWwKCR5L.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Deleniti harum mollitia eaque omnis vel ipsa nemo molestiae Quo sed quisquam est deserunt nam assumenda nulla cupiditate praesentiumrepellatunde",
+    "author": "Chris Dawson",
+    "publisher": "XYZ"
+  },
+  {
+    "id": "2",
+    "bookName": "Django for API",
+    "img": "https://m.media-amazon.com/images/I/31G2bC4VwoL.jpg",
+    "description": "BLearn how to build web APIs with Python and Django 2.1.Take a modern API-first approach to creating 3 different Django back-ends: a Library API, Todo API, and a Blog API with user authentication, permissions, proper documentation, and more.",
+    "author": "William S. Vincent",
+    "publisher": "Goodwill of Silicon Valley"
+  },
+  {
+    "id": "3",
+    "bookName": "Hibernate Tips",
+    "img": "https://m.media-amazon.com/images/I/41uN2gL+utL.jpg",
+    "description": "When you use Hibernate in your projects, you quickly recognize that you need to do more than just add @Entity annotations to your domain model classes. Real-world applications often require advanced mappings, complex queries, custom data types, and caching. ",
+    "author": "Thorben Janssen",
+    "publisher": "CreateSpace Independent"
+  },
+  {
+    "id": "4",
+    "bookName": "JavaScript Everywhere",
+    "img": "https://m.media-amazon.com/images/I/513dKkbff-L._SL500_.jpg",
+    "description": "JavaScript is the little scripting language that could. Once used chiefly to add interactivity to web browser windows, JavaScript is now a primary building block of powerful and robust applications.",
+    "author": "Adam D. Scott",
+    "publisher": "O'Reilly Media"
+  },
+  {
+    "id": "5",
+    "bookName": "Hibernate Tips",
+    "img": "https://m.media-amazon.com/images/I/41uN2gL+utL.jpg",
+    "description": "When you use Hibernate in your projects, you quickly recognize that you need to do more than just add @Entity annotations to your domain model classes. Real-world applications often require advanced mappings, complex queries, custom data types, and caching. ",
+    "author": "Thorben Janssen",
+    "publisher": "CreateSpace Independent"
+  },
+  {
+    "id": "6",
+    "bookName": "Django for API",
+    "img": "https://m.media-amazon.com/images/I/31G2bC4VwoL.jpg",
+    "description": "BLearn how to build web APIs with Python and Django 2.1.Take a modern API-first approach to creating 3 different Django back-ends: a Library API, Todo API, and a Blog API with user authentication, permissions, proper documentation, and more.",
+    "author": "William S. Vincent",
+    "publisher": "Goodwill of Silicon Valley"
+  },
+  {
+    "id": "7",
+    "bookName": "JavaScript Everywhere",
+    "img": "https://m.media-amazon.com/images/I/513dKkbff-L._SL500_.jpg",
+    "description": "JavaScript is the little scripting language that could. Once used chiefly to add interactivity to web browser windows, JavaScript is now a primary building block of powerful and robust applications.",
+    "author": "Adam D. Scott",
+    "publisher": "O'Reilly Media"
+  },
+  {
+    "id": "8",
+    "bookName": "Building Tools With Github",
+    "img": "https://m.media-amazon.com/images/I/51gcWwKCR5L.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Deleniti harum mollitia eaque omnis vel ipsa nemo molestiae Quo sed quisquam est deserunt nam assumenda nulla cupiditate praesentiumrepellatunde",
+    "author": "Chris Dawson",
+    "publisher": "XYZ"
+  },
+  {
+    "id": "9",
+    "bookName": "Hibernate Tips",
+    "img": "https://m.media-amazon.com/images/I/41uN2gL+utL.jpg",
+    "description": "When you use Hibernate in your projects, you quickly recognize that you need to do more than just add @Entity annotations to your domain model classes. Real-world applications often require advanced mappings, complex queries, custom data types, and caching. ",
+    "author": "Thorben Janssen",
+    "publisher": "CreateSpace Independent"
+  },
+  {
+    "id": "10",
+    "bookName": "Django for API",
+    "img": "https://m.media-amazon.com/images/I/31G2bC4VwoL.jpg",
+    "description": "BLearn how to build web APIs with Python and Django 2.1.Take a modern API-first approach to creating 3 different Django back-ends: a Library API, Todo API, and a Blog API with user authentication, permissions, proper documentation, and more.",
+    "author": "William S. Vincent",
+    "publisher": "Goodwill of Silicon Valley"
+  },
+  {
+    "id": "11",
+    "bookName": "Building Tools With Github",
+    "img": "https://m.media-amazon.com/images/I/51gcWwKCR5L.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit Deleniti harum mollitia eaque omnis vel ipsa nemo molestiae Quo sed quisquam est deserunt nam assumenda nulla cupiditate praesentiumrepellatunde",
+    "author": "Chris Dawson",
+    "publisher": "XYZ"
+  },
+  {
+    "id": "12",
+    "bookName": "JavaScript Everywhere",
+    "img": "https://m.media-amazon.com/images/I/513dKkbff-L._SL500_.jpg",
+    "description": "JavaScript is the little scripting language that could. Once used chiefly to add interactivity to web browser windows, JavaScript is now a primary building block of powerful and robust applications.",
+    "author": "Adam D. Scott",
+    "publisher": "O'Reilly Media"
+  }
+]
