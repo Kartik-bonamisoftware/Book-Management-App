@@ -1,5 +1,6 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useLocation, useHistory } from "react-router-dom";
+import AddToCartModal from "../components/ui/AddToCartModal";
 
 const Author = () => {
   // console.log(props);
@@ -9,26 +10,38 @@ const Author = () => {
   // const authorData = data.find((item) => item.id === id);
   // console.log("idddd", authorData);
 
-  let location = useLocation();
-  console.log(location.userProps);
-  console.log(location.pathname);
+  const history = useHistory();
+
+  let data = useLocation();
+
+  // on refreshing the page it will redirect to booklist page
+  if (!data?.userProps) {
+    history.push("/booklist");
+    return null;
+  }
+
+  let { author, bookName, publisher, description } = data.userProps;
+  console.log("1111", author);
 
   return (
     <div>
       <ul className="list-group">
         <li className="list-group-item">
-          <h1>Author : {location.userProps.author}</h1>
+          <h1>Author : {author}</h1>
         </li>
         <li className="list-group-item">
-          <h3>Book Name : {location.userProps.bookName} </h3>
+          <h3>Book Name : {bookName} </h3>
         </li>
         <li className="list-group-item">
-          <h3>Publisher : {location.userProps.publisher} </h3>
+          <h3>Publisher : {publisher} </h3>
         </li>
         <li className="list-group-item">
-          <h3>Description : {location.userProps.description} </h3>
+          <h3>Description : {description} </h3>
         </li>
       </ul>
+      <div>
+        <AddToCartModal />
+      </div>
     </div>
   );
 };

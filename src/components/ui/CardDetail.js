@@ -27,7 +27,7 @@ const CardDetail = ({ item }) => {
         <CardActions>
           <Link
             to={{
-              pathname: `/booklist/author/?id=${item.id}`,
+              pathname: `/booklist/author`,
               userProps: { ...item },
             }}
           >
