@@ -20,8 +20,9 @@ const Author = () => {
     return null;
   }
 
-  let { author, bookName, publisher, description } = data.userProps;
+  let { id, author, bookName, publisher, description } = data.userProps;
   console.log("1111", author);
+  console.log("2222", id);
 
   return (
     <div>
@@ -40,7 +41,7 @@ const Author = () => {
         </li>
       </ul>
       <div>
-        <AddToCartModal />
+        <AddToCartModal bookId={id} />
       </div>
     </div>
   );
