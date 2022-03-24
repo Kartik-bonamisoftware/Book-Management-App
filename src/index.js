@@ -5,9 +5,10 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import rootReducer from "./redux/reducers/rootReducer";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
+import { applyMiddleware, createStore } from "redux";
+import thunk from "redux-thunk";
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 console.log("store data", store);
 
 ReactDOM.render(

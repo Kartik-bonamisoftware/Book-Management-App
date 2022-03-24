@@ -8,12 +8,16 @@ import Author from "./view/Author";
 import Cart from "./view/Cart";
 import ContactUs from "./view/ContactUs";
 import Header from "./components/header/Header";
+import SignIn from "./components/forms/SignIn";
+import SignUp from "./components/forms/SignUp";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Switch>
+        <Route exact path="/signin" component={SignIn} />
+        <Route exact path="/signup" component={SignUp} />
         <Route exact path="/" component={Home} />
         <Route exact path="/booklist" component={BookList} />
         <Route path="/booklist/author" component={Author} />
