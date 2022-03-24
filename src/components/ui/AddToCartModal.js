@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const style = {
   position: "absolute",
@@ -24,10 +24,10 @@ export default function AddToCartModal({ bookId }) {
   const handleClose = () => setOpen(false);
   const [count, setCount] = React.useState(0);
   const dispatch = useDispatch();
-
   // use store here ---> by useSelector ----> state
 
-  console.log("bookId", bookId);
+  const selector = useSelector((state) => state.cartItems);
+  //   console.log("11111", selector);
 
   const addToCartHandler = () => {
     setCount(count + 1);
@@ -36,6 +36,12 @@ export default function AddToCartModal({ bookId }) {
   const removeToCartHandler = () => {
     setCount(count - 1);
   };
+  let dispatchData = [];
+  if (selector?.cartData) {
+    dispatchData.push(...selector.cartData, { bookId, count });
+  } else {
+    dispatchData.push({ bookId, count });
+  }
 
   return (
     <div>
@@ -84,7 +90,7 @@ export default function AddToCartModal({ bookId }) {
               onClick={() => {
                 dispatch({
                   type: "ADD_TO_CART",
-                  payload: { bookId, count }, // send payload into array
+                  payload: dispatchData, // send payload into array
                 });
               }}
             >

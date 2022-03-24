@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useLocation, useHistory } from "react-router-dom";
 import AddToCartModal from "../components/ui/AddToCartModal";
 
@@ -9,6 +10,8 @@ const Author = () => {
   // console.log("id", id);
   // const authorData = data.find((item) => item.id === id);
   // console.log("idddd", authorData);
+  // const selector = useSelector((state) => state.cartItems);
+  // console.log("11111", selector);
 
   const history = useHistory();
 
@@ -21,8 +24,8 @@ const Author = () => {
   }
 
   let { id, author, bookName, publisher, description } = data.userProps;
-  console.log("1111", author);
-  console.log("2222", id);
+  // console.log("1111", author);
+  // console.log("2222", id);
 
   return (
     <div>

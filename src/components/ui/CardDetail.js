@@ -5,6 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
+import { Box } from "@mui/system";
+import { useSelector } from "react-redux";
 
 const CardDetail = ({ item }) => {
   return (
@@ -21,7 +23,7 @@ const CardDetail = ({ item }) => {
             {item.bookName}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {item.description}
+            {/* {item.description} */}
           </Typography>
         </CardContent>
         <CardActions>
@@ -34,6 +36,23 @@ const CardDetail = ({ item }) => {
             Info
           </Link>
         </CardActions>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {item.quantity}
+        </Box>
+        {/* <button
+          onClick={dispatch({
+            type: "ADD_TO_CART",
+            payload: dispatchData,
+          })}
+        >
+          Remove
+        </button> */}
       </Card>
     </React.Fragment>
   );

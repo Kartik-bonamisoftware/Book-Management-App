@@ -2,13 +2,6 @@ import CardDetail from "../components/ui/CardDetail";
 import React from "react";
 import data from "../components/data/data.json";
 import Box from "@mui/material/Box";
-import {
-  Switch,
-  Route,
-  Link,
-  useParams,
-  useRouteMatch,
-} from "react-router-dom";
 
 const BookList = () => {
   // let { path, url } = useRouteMatch();
