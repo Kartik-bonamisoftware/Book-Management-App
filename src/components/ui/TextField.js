@@ -9,7 +9,7 @@ const TextField = ({ label, ...props }) => {
   //   console.log("useField", useField);
 
   return (
-    <div className="mb-4">
+    <div className="mb-2">
       <label htmlFor={field.name}>{label}</label>
       <input
         className={`form-control shadow-none ${
@@ -17,7 +17,7 @@ const TextField = ({ label, ...props }) => {
         }`}
         {...field}
         {...props}
-        autoComplete="on"
+        autoComplete="off"
       />
       <ErrorMessage component="div" name={field.name} className="error" />
     </div>

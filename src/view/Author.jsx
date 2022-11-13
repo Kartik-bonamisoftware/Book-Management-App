@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
 import { useLocation, useHistory } from "react-router-dom";
 import AddToCartModal from "../components/ui/AddToCartModal";
 

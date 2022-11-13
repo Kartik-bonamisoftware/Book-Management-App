@@ -8,18 +8,21 @@ const signUpSchema = yup.object().shape({
     .min(3, "Too Short!")
     .max(20, "Too Long!")
     .required("Required"),
-  email: yup.string().email("Invalid email").required("Required"),
+  email: yup
+    .array()
+    .of(
+      yup.string().email("Invalid Email").required("Please Enter Your Email")
+    ),
   password: yup
     .string()
-    // .matches(
-    //   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
-    //   "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
-    // )
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+      "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+    )
     .required("Please Enter Your Password"),
   confirmPassword: yup
     .string()
     .oneOf([yup.ref("password"), null], "Passwords must match")
-    .required("Please Enter Your Confirm Password")
     .required("Please Enter Your Confirm Password"),
 });
 

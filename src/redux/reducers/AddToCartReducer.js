@@ -1,5 +1,9 @@
 import { useSelector } from "react-redux";
-import { ADD_TO_CART, REMOVE_TO_CART } from "../constants/Constants";
+import {
+  ADD_TO_CART,
+  REMOVE_TO_CART,
+  ADD_TO_FINAL,
+} from "../constants/Constants";
 
 const initialState = {
   cartData: [],
@@ -8,6 +12,9 @@ const initialState = {
 export default function cartItems(state = [], action) {
   console.log(state);
   switch (action.type) {
+    case ADD_TO_FINAL:
+      return { ...state, cartData: action.payload };
+      break;
     case ADD_TO_CART:
       console.log("reducer", action);
       return { ...state, cartData: action.payload };
